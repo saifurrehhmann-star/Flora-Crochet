@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { useShop, ShopProvider } from './context/ShopContext';
 import AnnouncementBar from './components/AnnouncementBar';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SplashPreloader from './components/SplashPreloader';
+import { AnimatePresence, motion } from 'motion/react';
 
 // Import All Views
 import HomeView from './views/HomeView';
@@ -19,6 +22,12 @@ import PolicyViews from './views/PolicyViews';
 
 function AppContent() {
   const { currentView } = useShop();
+  const [showSplash, setShowSplash] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return !sessionStorage.getItem('yarnova_splash_played');
+    }
+    return true;
+  });
 
   const renderCurrentView = () => {
     switch (currentView) {
@@ -52,19 +61,38 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdfbf7] flex flex-col font-sans select-none selection:bg-brand-100 selection:text-brand-850">
-      {/* Dynamic Header & Promos Ticker */}
-      <AnnouncementBar />
-      <Header />
+    <>
+      <AnimatePresence mode="wait">
+        {showSplash && (
+          <motion.div
+            key="splash"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0, scale: 1.05 }}
+            transition={{ duration: 0.5, ease: 'easeInOut' }}
+            className="fixed inset-0 z-50"
+          >
+            <SplashPreloader onComplete={() => {
+              setShowSplash(false);
+              sessionStorage.setItem('yarnova_splash_played', 'true');
+            }} />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      {/* Main viewport stage with fade transition */}
-      <main className="flex-grow pb-16">
-        {renderCurrentView()}
-      </main>
+      <div className="min-h-screen bg-[#fdfbf7] flex flex-col font-sans select-none selection:bg-brand-100 selection:text-brand-850">
+        {/* Dynamic Header & Promos Ticker */}
+        <AnnouncementBar />
+        <Header />
 
-      {/* Elegant footer with site mapping links */}
-      <Footer />
-    </div>
+        {/* Main viewport stage with fade transition */}
+        <main className="flex-grow pb-16">
+          {renderCurrentView()}
+        </main>
+
+        {/* Elegant footer with site mapping links */}
+        <Footer />
+      </div>
+    </>
   );
 }
 
