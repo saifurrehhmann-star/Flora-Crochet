@@ -269,7 +269,7 @@ export default function CartView() {
           <div className="bg-stone-100/50 rounded-2xl p-4 border border-stone-150 space-y-2.5 text-[11px] text-stone-500 text-center">
             <p className="flex items-center gap-1.5 justify-center font-bold text-stone-700">
               <ShieldCheck size={14} className="text-emerald-600" />
-              <span>FloraCrochet Secure Checkout Guarantee</span>
+              <span>Yarnova Secure Checkout Guarantee</span>
             </p>
             <p className="leading-relaxed font-sans">
               Orders are packaged carefully to prevent crush damage to stuffing fiber. Comes inside eco-friendly custom pastel tissue sheets!

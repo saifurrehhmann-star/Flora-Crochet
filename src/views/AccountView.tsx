@@ -162,7 +162,7 @@ export default function AccountView() {
           <div className="text-center space-y-2 select-none">
             <span className="text-3xl">🌸</span>
             <h2 className="text-2xl font-extrabold font-display text-stone-850">
-              {authMode === 'login' ? 'Welcome Back!' : authMode === 'register' ? 'Join Flora Nest' : 'Retrieve Password'}
+              {authMode === 'login' ? 'Welcome Back!' : authMode === 'register' ? 'Join Yarnova Nest' : 'Retrieve Password'}
             </h2>
             <p className="text-xs text-stone-400">
               {authMode === 'login' ? 'Login to view orders, track custom designs, and view wishlist.' : 'Create an account to begin tracking stitches.'}

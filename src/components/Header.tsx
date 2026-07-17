@@ -59,8 +59,8 @@ export default function Header() {
             <span className="text-xl">🌸</span>
           </div>
           <div>
-            <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-stone-800 flex items-center gap-1 font-display">
-              Flora<span className="text-brand-500">Crochet</span>
+            <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight text-brand-500 flex items-center gap-1 font-display">
+              Yarnova
             </h1>
             <p className="text-[10px] uppercase tracking-widest text-stone-400 font-semibold -mt-1">Handmade Magic</p>
           </div>
@@ -219,7 +219,7 @@ export default function Header() {
               <div className="flex items-center justify-between pb-6 border-b border-stone-100">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl">🌸</span>
-                  <span className="text-xl font-bold font-display">FloraCrochet</span>
+                  <span className="text-xl font-bold font-display">Yarnova</span>
                 </div>
                 <button
                   onClick={() => setMobileMenuOpen(false)}

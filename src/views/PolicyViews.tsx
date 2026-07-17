@@ -49,7 +49,7 @@ export default function PolicyViews() {
             <div className="space-y-4 animate-fadeIn">
               <h3 className="font-display font-extrabold text-stone-800 text-lg border-b border-stone-50 pb-2">Shipping & Delivery Policy</h3>
               <p>
-                All FloraCrochet products are double-knotted and packed in custom protective boxes to prevent fiber compression or fluff flattening during transport.
+                All Yarnova products are double-knotted and packed in custom protective boxes to prevent fiber compression or fluff flattening during transport.
               </p>
               <h4 className="font-bold text-stone-800 mt-4 uppercase text-[10px] tracking-wider text-brand-600">Pakistan Nationwide Shipping</h4>
               <p>
@@ -93,7 +93,7 @@ export default function PolicyViews() {
             <div className="space-y-4 animate-fadeIn font-sans">
               <h3 className="font-display font-extrabold text-stone-800 text-lg border-b border-stone-50 pb-2">Privacy Agreement</h3>
               <p>
-                At FloraCrochet, we respect your confidentiality. We do not sell or lease your personal credentials.
+                At Yarnova, we respect your confidentiality. We do not sell or lease your personal credentials.
               </p>
               <h4 className="font-bold text-stone-800 mt-4 uppercase text-[10px] tracking-wider text-brand-600">Data Collection</h4>
               <p>
@@ -118,7 +118,7 @@ export default function PolicyViews() {
               </p>
               <h4 className="font-bold text-stone-800 mt-4 uppercase text-[10px] tracking-wider text-brand-600">Intellectual Property</h4>
               <p>
-                All original design templates, crochet patterns, photography assets, and texts belong to FloraCrochet. Copying patterns for commercial retail is strictly prohibited.
+                All original design templates, crochet patterns, photography assets, and texts belong to Yarnova. Copying patterns for commercial retail is strictly prohibited.
               </p>
             </div>
           )}

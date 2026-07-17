@@ -26,13 +26,13 @@ export default function AboutView() {
         <div className="space-y-4 text-stone-600 leading-relaxed text-sm font-sans">
           <h3 className="text-xl font-bold text-stone-850 font-display">Born in Islamabad, Pakistan</h3>
           <p>
-            FloraCrochet began in a cozy, sunlit room in Islamabad, with a single basket of pastel milk-cotton yarn and a dream to preserve the slow-craft culture in a fast-fashion world.
+            Yarnova began in a cozy, sunlit room in Islamabad, with a single basket of pastel milk-cotton yarn and a dream to preserve the slow-craft culture in a fast-fashion world.
           </p>
           <p>
             Unlike mass-produced plastic toys, our amigurumi dolls, cute flower bouquets, and custom cozy cardigans are designed from scratch, custom stitched row-by-row, and double-knotted to withstand years of loving squishes.
           </p>
           <p className="text-stone-500 font-serif italic">
-            When you purchase a piece from FloraCrochet, you are supporting independent Pakistani women artisans who practice this ancient art in their homes, blending traditional techniques with modern cottagecore aesthetic.
+            When you purchase a piece from Yarnova, you are supporting independent Pakistani women artisans who practice this ancient art in their homes, blending traditional techniques with modern cottagecore aesthetic.
           </p>
         </div>
       </div>

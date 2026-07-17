@@ -41,7 +41,7 @@ export default function CustomOrderView() {
   };
 
   const generateWhatsAppMessage = () => {
-    const text = `🌸 *FloraCrochet Custom Order* 🌸\n\n` +
+    const text = `🌸 *Yarnova Custom Order* 🌸\n\n` +
       `👤 *Name:* ${name}\n` +
       `✉️ *Email:* ${email}\n` +
       `📞 *Phone:* ${phone}\n` +

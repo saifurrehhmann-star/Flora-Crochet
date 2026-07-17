@@ -20,8 +20,8 @@ export default function Footer() {
             <div className="w-9 h-9 rounded-full bg-pastel-pink flex items-center justify-center font-bold text-lg text-brand-700">
               🌸
             </div>
-            <h2 className="text-xl font-bold font-display text-white">
-              Flora<span className="text-brand-300">Crochet</span>
+            <h2 className="text-xl font-bold font-display text-brand-300">
+              Yarnova
             </h2>
           </div>
           <p className="text-sm text-stone-400 leading-relaxed font-sans">
@@ -106,8 +106,8 @@ export default function Footer() {
             <Mail className="w-5 h-5 text-brand-300 shrink-0" />
             <div>
               <p className="font-semibold text-white">Email Address</p>
-              <a href="mailto:hello@floracrochet.com" className="text-stone-400 hover:text-brand-300 transition-colors">
-                hello@floracrochet.com
+              <a href="mailto:hello@yarnova.com" className="text-stone-400 hover:text-brand-300 transition-colors">
+                hello@yarnova.com
               </a>
             </div>
           </div>
@@ -155,7 +155,7 @@ export default function Footer() {
       {/* Lower Copyright section */}
       <div className="border-t border-stone-800 py-6 text-center text-xs text-stone-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p>© {new Date().getFullYear()} FloraCrochet. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Yarnova. All rights reserved.</p>
           <p className="flex items-center gap-1 justify-center">
             Handcrafted with <Heart size={12} className="text-brand-500 fill-brand-500 animate-pulse" /> & high-quality milk cotton yarn.
           </p>

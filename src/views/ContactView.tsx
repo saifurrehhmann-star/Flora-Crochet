@@ -44,7 +44,7 @@ export default function ContactView() {
                 </div>
                 <div>
                   <h4 className="font-bold text-stone-800">Email Assistance</h4>
-                  <a href="mailto:hello@floracrochet.com" className="text-stone-500 hover:text-brand-600 transition-colors">hello@floracrochet.com</a>
+                  <a href="mailto:hello@yarnova.com" className="text-stone-500 hover:text-brand-600 transition-colors">hello@yarnova.com</a>
                   <p className="text-[10px] text-stone-400 mt-0.5">Average response within 12 hours</p>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function ContactView() {
                 </div>
                 <div className="self-center flex flex-col items-center gap-1">
                   <span className="text-2xl animate-bounce">📍</span>
-                  <span className="bg-stone-800 text-white font-sans py-1 px-2.5 rounded-lg shadow font-extrabold text-[9px]">FloraCrochet Studio</span>
+                  <span className="bg-stone-800 text-white font-sans py-1 px-2.5 rounded-lg shadow font-extrabold text-[9px]">Yarnova Studio</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sector F-10</span>

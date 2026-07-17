@@ -333,7 +333,7 @@ export default function HomeView() {
           <span className="text-xs text-brand-500 font-extrabold uppercase tracking-widest">Aesthetic Inspiration</span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-stone-800 font-display">Join Our Instagram Nest</h2>
           <p className="text-sm text-stone-500 max-w-md mx-auto">
-            Tag <span className="font-bold text-stone-700">@FloraCrochetShop</span> to be featured! Share your unboxings and cuddly moments.
+            Tag <span className="font-bold text-stone-700">@YarnovaShop</span> to be featured! Share your unboxings and cuddly moments.
           </p>
         </div>
 
