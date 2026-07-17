@@ -1,0 +1,6 @@
+{
+  "name": "Handmade Crochet Shop",
+  "description": "A complete storefront for cute, handmade crochet products including amigurumi, accessories, custom orders, shopping cart, user accounts, and an admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
