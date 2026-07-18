@@ -271,7 +271,7 @@ export default function AdminView() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 <div className="bg-emerald-50 border border-emerald-100 p-5 rounded-2xl space-y-1">
                   <span className="text-[10px] font-bold text-emerald-700 uppercase tracking-wider block">Completed Sales</span>
-                  <p className="text-xl sm:text-2xl font-extrabold text-emerald-900">${metrics.totalSales.toFixed(2)}</p>
+                  <p className="text-xl sm:text-2xl font-extrabold text-emerald-900">Rs. {metrics.totalSales.toFixed(0)}</p>
                 </div>
                 <div className="bg-blue-50 border border-blue-100 p-5 rounded-2xl space-y-1">
                   <span className="text-[10px] font-bold text-blue-700 uppercase tracking-wider block">Pending Orders</span>
@@ -658,14 +658,14 @@ export default function AdminView() {
                         {o.items.map((it, idx) => (
                           <div key={idx} className="flex justify-between font-medium">
                             <span>- {it.name} (Qty: {it.quantity})</span>
-                            <span className="font-bold text-stone-700">${(it.price * it.quantity).toFixed(2)}</span>
+                            <span className="font-bold text-stone-700">Rs. {(it.price * it.quantity).toFixed(0)}</span>
                           </div>
                         ))}
                       </div>
 
                       <div className="border-t border-stone-50 pt-2 flex justify-between font-bold text-stone-500">
                         <span>Paid via {o.paymentMethod}</span>
-                        <span className="text-brand-600 font-extrabold text-sm">Grand Total: ${o.total.toFixed(2)}</span>
+                        <span className="text-brand-600 font-extrabold text-sm">Grand Total: Rs. {o.total.toFixed(0)}</span>
                       </div>
                     </div>
                   ))}
@@ -840,7 +840,7 @@ export default function AdminView() {
                     <div>
                       <h4 className="font-bold text-stone-800 text-sm font-mono tracking-wide">{cp.code}</h4>
                       <p className="text-[10px] text-stone-400 mt-0.5">{cp.description}</p>
-                      <p className="text-[9px] text-[#bc4747] font-bold uppercase mt-1">Min purchase: ${cp.minSpend}</p>
+                      <p className="text-[10px] text-[#bc4747] font-bold uppercase mt-1">Min purchase: Rs. {cp.minSpend}</p>
                     </div>
                     <button
                       onClick={() => deleteCoupon(cp.code)}

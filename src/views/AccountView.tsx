@@ -511,7 +511,7 @@ export default function AccountView() {
                                     <p className="text-[10px] text-stone-400">Qty: {it.quantity} | {Object.entries(it.selectedVariant).map(([k, v]) => `${k}:${v}`).join(', ')}</p>
                                   </div>
                                 </div>
-                                <span className="font-bold text-stone-700">${(it.price * it.quantity).toFixed(2)}</span>
+                                <span className="font-bold text-stone-700">Rs. {(it.price * it.quantity).toFixed(0)}</span>
                               </div>
                             ))}
                           </div>
@@ -519,7 +519,7 @@ export default function AccountView() {
                           <div className="border-t border-stone-100 pt-3 flex flex-wrap justify-between items-baseline gap-2">
                             <span className="text-xs text-stone-500 font-medium">Payment via <strong>{order.paymentMethod}</strong></span>
                             <span className="text-sm font-extrabold text-stone-800">
-                              Grand Total Paid: <span className="text-[#bc4747] text-base">${order.total.toFixed(2)}</span>
+                              Grand Total Paid: <span className="text-[#bc4747] text-base">Rs. {order.total.toFixed(0)}</span>
                             </span>
                           </div>
                         </div>
@@ -614,7 +614,7 @@ export default function AccountView() {
                       <img src={p.images[0]} alt={p.name} referrerPolicy="no-referrer" className="w-14 h-14 rounded-xl object-cover shrink-0 bg-stone-50 border" />
                       <div className="min-w-0 flex-1 text-xs">
                         <h4 onClick={() => setView('product-details', p.id)} className="font-bold text-stone-800 hover:text-[#bc4747] cursor-pointer truncate">{p.name}</h4>
-                        <span className="font-extrabold text-[#bc4747]">${(p.discountPrice || p.price).toFixed(2)}</span>
+                        <span className="font-extrabold text-[#bc4747]">Rs. {(p.discountPrice || p.price).toFixed(0)}</span>
                       </div>
                       <button
                         onClick={() => toggleWishlist(p.id)}
